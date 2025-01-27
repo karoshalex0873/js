@@ -53,3 +53,39 @@ const removeArry =(arr,element) =>{
   return removedelement;
 }
 console.log(removeArry([1,2,3,4,5],3));
+
+// Exterscise 8: Write a JavaScript program to get the maximum value of an array, after mapping each element to a value using arrow function
+const maximumArray =(arr)  =>{
+  max=Math.max(...arr);
+  return max;
+}
+console.log(maximumArray([1,2,3,6,5]));
+
+// Exterscise 9: Write a JavaScript program to get the sum of the values in an array after mapping each element to a value using arrow function
+const sumArray =(arr) =>{
+  sum=arr.reduce((a,b) => a+b,0);
+  return sum;
+}
+console.log(sumArray([1,2,3,4,5]));
+
+// Exterscise 10: Write a JavaScript program to return numbers in array that are less than 5 in an array of 0-10 using arrow function
+const lessThan5 =(arr) =>{
+  finalOutput = arr.filter(num=>num<5);
+  return finalOutput
+}
+console.log(lessThan5([1,2,3,4,5,6,7,8,9,10]))
+
+// Exterscise 11: Write a JavaScript program to check whether a string is blank or not using arrow function
+const isBlank = (str) => str.length === 0? "String is blank" : "String is not blank";
+console.log(isBlank(`1`)); // String is blank
+
+// Exterscise 12: Write a JavaScript program to split a string and convert it into an array of words using arrow function
+const stringToArray =(myString) =>{
+  let words = myString.split(' ');
+  return words;
+}
+console.log(stringToArray("I am learning JavaScript"));
+
+// Exterscise 13: Write a JavaScript program to print my name and age  after timeout using arrow function
+const printNameAge =(name,age)=>`My name is ${name}. I am ${age} years old.`;
+setTimeout(()=>console.log(printNameAge("Ayesha", 25)),5000);
