@@ -74,4 +74,9 @@ const wildAnimalsNames = wildAnimals.map((animal) => animal.name);
 console.log(`The wild animals are ${wildAnimalsNames}`);
 const domesticAnimals=Animals1.filter((animal) => animal.wildAnimal === false);
 const domesticAnimalsNames =domesticAnimals.map((animal) => animal.name)
-console.log(`The domestic animals are ${domesticAnimalsNames}`)
+console.log(`the list of domestic animal:${domesticAnimalsNames}`)
+// sorted animal list
+const sortedAnimal = domesticAnimals.map((animal) =>animal.name).sort()
+console.log(`sorted animal list ${sortedAnimal}`)
+
+// sorting the list of animals name in ascending order
