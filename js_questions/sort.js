@@ -17,3 +17,14 @@ console.log(`sorted product price ${sortProductPrice}`)
 // sort by quantity
 const sortProductQuantity = Products.map((product) => product.quantity).sort((a,b)=>b-a)
 console.log(`sorted product quantity ${sortProductQuantity}`)
+
+
+// functions in javascript
+function areaOfTriangle(base,height){
+  Area= 0.5 * base * height;
+  return Area;
+}
+console.log(areaOfTriangle(5,20));
+
+const areaOfSquare = (side ,width)=> side*width;
+console.log(areaOfSquare(5,10));
