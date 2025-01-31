@@ -1,12 +1,10 @@
-const Sum = (num1, num2,callback) => {
-  setTimeout(()=>{
-    results=num1+num2
-    console.log(results)
-    callback();
-  }, 2000);
-};
+function greet(name, callback) {
+  console.log('Hello ' + name + '!');
+  callback();
+}
 
-const Message = () =>console.log('Your operation has been completed successfully');
+function sayGoodbye() {
+  console.log('Goodbye!');
+}
 
-Sum(5,5,Message);
-
+greet('Alex', sayGoodbye);
