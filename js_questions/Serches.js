@@ -46,3 +46,4 @@ const People = [
 const olderThan30 = People.filter((person => person.age >= 30))
 const olderThan30Names=olderThan30.map((person => person.name))
 console.log(`The following people has the age of of 30 and above;  ${olderThan30Names}`)
+
